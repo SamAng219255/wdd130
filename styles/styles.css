@@ -13,15 +13,23 @@
 	--first-grid-val: 1 / 2;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 nav {
 	background-color: var(--theme-color);
 	padding: 10px;
+	overflow: auto;
 }
 nav a {
 	color: white;
 	display: block;
 	padding: 20px;
+	width: fit-content;
+	float: left;
 }
 
 h1 {
@@ -30,6 +38,7 @@ h1 {
 
 main {
 	max-width: 840px;
+	text-shadow: 0 0 0.25em white;
 }
 main img {
 	width: 150px;
@@ -37,6 +46,9 @@ main img {
 	border: 1px solid var(--primary-border-color);
 	padding: 2px;
 	box-shadow: 0 0 30px gray;
+}
+.profile-img {
+	float: right;
 }
 
 p {
@@ -82,4 +94,13 @@ footer {
 }
 cite {
 	font-size: var(--font-size-small);
+}
+
+/*Class Selectors*/
+
+.box {
+	margin: 1rem;
+	padding: 1rem;
+	border: black solid 2px;
+	width: fit-content;
 }
