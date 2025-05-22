@@ -1,5 +1,21 @@
+:root {
+	--theme-color: darkblue;
+	--primary-border-color: black;
+	--faint-bright: #C0C0C0;
+	--faint-dark: #404040;
+
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+
+	--font-size-small: small;
+
+	--first-grid-val: 1 / 2;
+}
+
+
 nav {
-	background-color: darkblue;
+	background-color: var(--theme-color);
 	padding: 10px;
 }
 nav a {
@@ -9,7 +25,7 @@ nav a {
 }
 
 h1 {
-	color: darkblue;
+	color: var(--theme-color);
 }
 
 main {
@@ -18,7 +34,7 @@ main {
 main img {
 	width: 150px;
 	height: auto;
-	border: 1px solid black;
+	border: 1px solid var(--primary-border-color);
 	padding: 2px;
 	box-shadow: 0 0 30px gray;
 }
@@ -29,11 +45,11 @@ p {
 
 aside {
 	width: 600px;
-	margin: 1rem;
-	border: black solid 2px;
-	padding: 0.5rem;
-	background-color: #C0C0C0;
-	color: #404040;
+	margin: var(--spacing-md);
+	border: var(--primary-border-color) solid 2px;
+	padding: var(--spacing-sm);
+	background-color: var(--faint-bright);
+	color: var(--faint-dark);
 }
 .aside-grid {
 	display: grid;
@@ -43,21 +59,21 @@ aside {
 }
 .aside-grid>.cited-img-wrapper {
 	grid-column: 2 / 3;
-	grid-row: 1 / 2;
+	grid-row: var(--first-grid-val);
 }
 aside img {
 	width: 200px;
 	height: auto;
 }
 .aside-grid>p {
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
+	grid-column: var(--first-grid-val);
+	grid-row: var(--first-grid-val);
 	margin: 0;
 }
 
 footer {
-	margin-top: 1.5rem;
-	border-top: #C0C0C0 solid 2px;
+	margin-top: var(--spacing-lg);
+	border-top: var(--faint-bright) solid 2px;
 	text-align: center;
 }
 
@@ -65,5 +81,5 @@ footer {
 	width: min-content;
 }
 cite {
-	font-size: small;
+	font-size: var(--font-size-small);
 }
