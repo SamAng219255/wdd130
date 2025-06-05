@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #FFF8F0;
+}
+
+header {
+	border-bottom: solid 2px black;
+}
+h1 {
+	margin: 0.5em 0.5em 1em;
+	font-size: 2em;
+}
+
+form {
+	width: 30em;
+	margin: 1em auto;
+	padding: 1em;
+	border: solid 1px black;
+	border-radius: 0.5em;
+	background-color: #E0DCD8;
+	display: grid;
+	grid-gap: 1em;
+}
+
+fieldset {
+	display: grid;
+	padding: 0.5em;
+	gap: 1em;
+}
+legend {
+	padding: 0.25em;
+	margin-left: 0.5em;
+}
+
+label, input, select, textarea {
+	display: block;
+	cursor: pointer;
+}
+label {
+	color: rgba(0, 0, 0, 0.8);
+	text-align: right;
+	padding-right: 1em;
+}
+
+input, select, textarea {
+	padding: 0.25em;
+	font-size: 1.125em;
+}
+input[type="checkbox"] {
+	width: 22px;
+	height: 22px;
+	vertical-align: bottom;
+}
+
+button {
+	all: unset;
+	display: block;
+	cursor: pointer;
+	border: solid 1px rgba(0, 0, 0, 0.8);
+	border-radius: 0.25em;
+	background-color: #FFF0E0;
+	text-align: center;
+	padding: 0.5em;
+}
+button:hover {
+	background-color: #E0FFE0;
+}
+
+.form-item {
+	display: grid;
+}
+.column1 {
+	grid-template-columns: 3fr 1fr;
+}
+.column2 {
+	grid-template-columns: 1fr 2fr;
+}
+.textarea label {
+	padding-right: initial;
+	text-align: center;
+}
+
+footer {
+	border-top: solid 1px black;
+	text-align: center;
+	padding: 0.5em;
+	font-size: 0.85em;
+}
