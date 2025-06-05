@@ -23,8 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 		"wdth" 100;
 
 	color: var(--accent2-color);
+	margin-bottom: 1em;
 }
-body, a {
+body {
 	font-family: var(--body-font);
 	font-weight: 400;
 	font-style: normal;
@@ -57,7 +58,7 @@ header>nav>a {
 	color: var(--primary-color);
 	text-decoration: none;
 	margin: 0.5em;
-	transition: color 0.25s, background-color 0.25s;
+	transition: color 0.25s ease, background-color 0.25s ease;
 }
 header>nav>a:hover {
 	padding: 0.5em;
@@ -74,6 +75,9 @@ header, main, footer {
 nav, p, section, article {
 	margin: 16px;
 	padding: 8px;
+}
+a {
+	color: inherit;
 }
 
 .socialmedia a {
@@ -140,6 +144,130 @@ figure img {
 	width: 100%;
 }
 
+section .section-content {
+	display: grid;
+	background-color: var(--accent1-color);
+	color: var(--primary-color);
+	padding: 1rem;
+}
+section:nth-child(even) .section-content {
+	background-color: var(--accent2-color);
+	color: var(--secondary-color);
+}
+
+textarea, input, button {
+	font-size: 1.1em;
+	padding: 0.5em;
+	font-family: inherit;
+}
+.required::after, .required-note::before {
+	content: "*";
+	user-select: none;
+	-webkit-user-select: none;
+	color: #C44;
+}
+.required-note {
+	font-size: 0.85em;
+}
+
+#contacts {
+	grid-template-columns: 1fr 1fr;
+}
+#contacts dl {
+	margin: 0px 16px;
+	padding: 8px;
+}
+#contacts dd {
+	margin-bottom: 16px;
+	padding: 0 1em;
+}
+#contacts dd:last-child {
+	margin-bottom: 0;
+}
+#contacts p {
+	margin: 0px 16px;
+}
+
+#team {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+#team :nth-child(1) {
+	grid-column: 1 / 4;
+}
+#team figcaption {
+	text-align: center;
+}
+
+#reach-out {
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5em;
+}
+#reach-out-cell-0 {
+	grid-area: 1/1/2/3;
+	padding-bottom: 0.5em;
+}
+#reach-out-cell-1 {
+	grid-area: 2/1/3/2;
+}
+#reach-out-cell-2 {
+	grid-area: 3/1/4/2;
+}
+#reach-out-cell-3 {
+	grid-area: 2/2/4/3;
+}
+#reach-out-cell-4 {
+	grid-area: 4/1/5/3;
+}
+#reach-out-cell-5 {
+	grid-area: 5/1/6/3;
+}
+#reach-out-cell-6 {
+	grid-area: 6/1/7/3;
+}
+#reach-out label, #reach-out input, #reach-out textarea {
+	display: block;
+	border-radius: 0.25em;
+}
+#reach-out-cell-1 input, #reach-out-cell-2 input {
+	width: 100%;
+}
+#reach-out-cell-3 p {
+	margin: 0;
+}
+#reach-out-cell-3 ul {
+	padding: 0 24px;
+	list-style: none;
+}
+#reach-out-cell-3 label, #reach-out-cell-3 input {
+	display: inline-block;
+}
+#reach-out-cell-4 textarea {
+	width: 100%;
+	height: 360px;
+	resize: none;
+}
+#reach-out-cell-5 input {
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	vertical-align: bottom;
+}
+#reach-out-cell-6 button {
+	background-color: var(--secondary-color);
+	color: var(--accent2-color);
+	border: solid 2px var(--accent2-color);
+	border-radius: 0.5em;
+	font-size: 1.1em;
+	padding: 0.6em 1.2em;
+	cursor: pointer;
+	transition: background-color 0.25s ease, color 0.25s ease;
+}
+#reach-out-cell-6 button:hover {
+	background-color: var(--accent2-color);
+	color: var(--secondary-color);
+}
+
 footer {
 	display: grid;
 	grid-template: 1fr / 1fr;
@@ -157,4 +285,7 @@ footer nav {
 footer nav img {
 	height: 2em;
 	width: auto;
+}
+footer .wireframe-link {
+	padding: 2em;
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/rafting.css">
+
+	<title>Contact Us | Thunder Ridge White Water Rafting</title>
+	<meta name="description" content="Contains contact information and tools for the thunder ridge white water rafting company.">
+	<meta name="author" content="Sam Anguiano">
+</head>
+<body>
+	<header>
+		<img src="images/logo.jpg" alt="Logo">
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="trips.html">Trips</a>
+			<a href="contact.html">Contact Us</a>
+		</nav>
+	</header>
+	<main>
+		<section class="solid">
+			<h2>Where to find us</h2>
+			<div class="section-content" id="contacts">
+				<div>
+					<p>You can contact us in any of the following places:</p>
+					<dl>
+						<dt>Our Address:</dt>
+						<dd>B 25th St. Troy, NY</dd>
+						<dt>Our Phone Number</dt>
+						<dd>+1 (800) 555-0123</dd>
+						<dt>Our Email:</dt>
+						<dd>thunderridge@example.com</dd>
+					</dl>
+					<!-- 
+						All contact information provided is fake.
+
+						The "address" of "B 25th St. Troy, NY" is a nonsense address that many maps will interpret by sending you to
+						the actual 25th street in Troy New York and the apartment complex that occupies it but nowhere on the street
+						actually matches because "B" can't be a street address and the building are not designated by letter. It is a
+						reference to a string of fake online referrals I receive while serving my mission in Troy, New York. A strangely
+						large portion of the fake referrals had "Apt 6 B 25th St Troy, NY" listed as their address. We did conclusively
+						prove the address wasn't real while up there.
+
+						All 555-01XX numbers in the US are unconnected numbers intended for display in media when a number is shown.
+
+						"@example.com" is an official unused domain with just enough active servers for it to be used in basic testing that
+						it exists.
+					 -->
+					<p>Or directly through <a href="#reach-out">our inbox</a> below.</p>
+				</div>
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4969.876697677566!2d-73.66455065175619!3d42.738419964103755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1749095352840!5m2!1sen!2sus" width="380" height="380" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="solid">
+			<h2>Our Team</h2>
+			<div class="section-content" id="team">
+				<p>Our team will be more than happy to help you in any way they can!</p>
+				<figure>
+					<img src="images/employee1.jpeg" alt="Head Rafting Guide: Ravi Martinez">
+					<figcaption>Ravi Martinez — Lead Rafting Guide</figcaption>
+				</figure>
+				<figure>
+					<img src="images/employee2.jpeg" alt="Reservations Manager: Diego Kapoor">
+					<figcaption>Diego Kapoor — Reservations Manager</figcaption>
+				</figure>
+				<figure>
+					<img src="images/employee3.jpeg" alt="Customer Relations Coordinator: Arjun Lopez">
+					<figcaption>Arjun Lopez — Customer Relations Coordinator</figcaption>
+				</figure>
+				<!-- Images and names are AI generated for demonstration purposes. -->
+			</div>
+		</section>
+		<section class="solid">
+			<h2>Reach out</h2>
+			<form class="section-content" id="reach-out">
+				<div id="reach-out-cell-0">
+					<span class="required-note">required</span>
+				</div>
+				<div id="reach-out-cell-1">
+					<label class="required">Your name</label>
+					<input type="text" name="name" id="reach-out-name">
+				</div>
+				<div id="reach-out-cell-2">
+					<label class="required">Your email</label>
+					<input type="email" name="email" id="reach-out-email">
+				</div>
+				<div id="reach-out-cell-3">
+					<p class="required">Why are you reaching out to us today?</p>
+					<ul>
+						<li><label><input type="radio" name="purpose" value="general"> General Inquiry</label></li>
+						<li><label><input type="radio" name="purpose" value="reservation"> Reservation Question</label></li>
+						<li><label><input type="radio" name="purpose" value="website"> Website Suggestion</label></li>
+					</ul>
+				</div>
+				<div id="reach-out-cell-4">
+					<label class="required">Enter you message below:</label>
+					<textarea name="message" id="reach-out-message"></textarea>
+				</div>
+				<div id="reach-out-cell-5">
+					<label><input type="checkbox" name="newsletter" checked> Sign up for our newsletter to stay up to date!</label>
+				</div>
+				<div id="reach-out-cell-6">
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2025; Thunder Ridge White Water Rafting; Sam Anguiano</p>
+		<p class="wireframe-link"><a href="https://app.moqups.com/bGY6goolxgyXPSamWc4JbxZlOFKAZV4f/view/page/ad64222d5" target="_blank">link to the Contact Us wireframe image</a></p>
+		<nav class="socialmedia">
+			<a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+			<a href="https://x.com" target="_blank"><img src="images/x.png" alt="X"></a>
+			<a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+		</nav>
+	</footer>
+</body>
+</html>
