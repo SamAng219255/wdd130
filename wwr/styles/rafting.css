@@ -150,7 +150,7 @@ section .section-content {
 	color: var(--primary-color);
 	padding: 1rem;
 }
-section:nth-child(even) .section-content {
+section:nth-child(odd) .section-content {
 	background-color: var(--accent2-color);
 	color: var(--secondary-color);
 }
