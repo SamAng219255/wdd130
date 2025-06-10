@@ -80,12 +80,23 @@ a {
 	color: inherit;
 }
 
+form {
+	display: grid;
+}
+
 .socialmedia a {
 	text-decoration: none;
 }
 
+#home-page {
+	display: grid;
+}
+
 .hero {
 	position: relative;
+}
+#home-page .hero {
+	grid-area: 1/1/2/3;
 }
 
 .hero>img {
@@ -118,6 +129,54 @@ a {
 	height: auto;
 }
 
+#newsletter {
+	grid-area: 2/1/3/2;
+	background-color: var(--accent1-color);
+	color: var(--primary-color);
+	padding: 1em 0.5em;
+}
+#newsletter p {
+	padding: 0;
+	margin: 0 0 0.5em;
+}
+#newsletter input {
+	margin-bottom: 0.5em;
+}
+
+#call-out {
+	grid-area: 2/2/3/3;
+	background-color: var(--accent1-color);
+	color: var(--primary-color);
+	padding: 2rem 1.5rem;
+}
+#call-out * {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#call-out h2 {
+	font-size: 1.17em;
+	color: var(--primary-color);
+	margin: 0.5rem;
+}
+
+#home-cards {
+	grid-area: 3/1/4/3;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	color: var(--secondary-color);
+}
+#home-cards>div {
+	width: calc(50% - 0.5rem);
+	background-color: var(--accent2-color);
+}
+#home-cards img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .history {
 	display: grid;
 	grid-template: 1.78125rem 1fr / 1fr 210px 1fr;
@@ -142,6 +201,71 @@ a {
 }
 figure img {
 	width: 100%;
+}
+
+.trips-cards {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+#trips-title {
+	grid-area: 1/1/2/3;
+}
+
+#trips-call-out {
+	grid-area: 3/1/4/3;
+	background-color: var(--accent1-color);
+	color: var(--primary-color);
+	height: fit-content;
+	align-self: center;
+	padding: 3em 1.5em;
+}
+
+#trip1 {
+	grid-area: 2/1/3/3;
+}
+#trip2 {
+	grid-area: 4/1/5/2;
+}
+#trip3 {
+	grid-area: 4/2/5/3;
+}
+.trip-card img {
+	width: 100%;
+	height: auto;
+}
+.trip-card h2 {
+	font-size: 1.17em;
+	text-align: center;
+	margin: 0.5em 0;
+}
+.trip-card p {
+	padding: 0;
+	margin: 0;
+}
+
+#trips-table {
+	grid-area: 5/1/6/3;
+}
+
+#trips-table table {
+	border-spacing: 0;
+}
+#trips-table tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+#trips-table td, #trips-table th {
+	padding: 0.5rem;
+}
+#trips-table td, #trips-table tbody th {
+	border-top: black 1px solid;
+}
+#trips-table thead tr {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#trips-table tbody tr:nth-child(odd) {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 section .section-content {
